@@ -1,5 +1,11 @@
 package Ejercicio_barajaCartas;
 
-public class Carta {
+public abstract class Carta {
+    
+    protected Carta() {}
+
+    private void darVuelta(){};
+
+    public abstract void mostrar();
     
 }

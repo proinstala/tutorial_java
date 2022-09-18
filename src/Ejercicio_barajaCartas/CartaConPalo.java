@@ -1,5 +1,14 @@
 package Ejercicio_barajaCartas;
 
-public class CartaConPalo {
+public abstract class CartaConPalo extends Carta {
     
+    protected Palo palo;
+
+    protected CartaConPalo(Palo palo) {
+        super();
+        this.palo = palo;
+    }
+
+    public abstract void mostrar();
+
 }
