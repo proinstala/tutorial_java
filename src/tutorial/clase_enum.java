@@ -74,5 +74,6 @@ public class clase_enum {
         System.out.print("Nota: " + notas_musicales);
         System.out.println("  |  Nombre Americano: " + notas_musicales.getAcorde());
 
+        entrada.close();
     }
 }

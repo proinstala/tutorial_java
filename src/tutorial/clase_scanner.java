@@ -18,5 +18,7 @@ public class clase_scanner {
         int edad = entrada.nextInt(); //introduce un dato de tipo int
 
         System.out.println("Hola " + nombre_usario + ", tu edad es " + edad + " años.");
+
+        entrada.close();
     }
 }
