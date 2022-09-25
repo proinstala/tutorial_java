@@ -1,0 +1,3 @@
+
+vamos a aprender java.
+ahora tambien aprenderemos como usar Streams.
