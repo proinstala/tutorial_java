@@ -67,7 +67,7 @@ public class cadenas {
         BLANCO				\u001B[37m		    \u001B[47m
 
         */
-        
+        System.out.println("Hola GitHub, esto es una prueba");
         String nombre = "David";
         String nombre2 = "Juan";
         String apellidos = "Jimenez Alonso";
