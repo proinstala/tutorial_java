@@ -41,7 +41,7 @@ public class Jugador {
         this.color = color;
     }
 
-    /*
+    /**
      * Constructor de copia.
      * Crea un jugador copiando los parametros del jugador pasado como parametro.
      * 

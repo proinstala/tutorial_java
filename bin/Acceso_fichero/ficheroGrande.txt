@@ -1,0 +1,10 @@
+Determinación del equipo necesario:
+Lo primero que debemos hacer es conocer qué necesita la aplicación para que funcione 
+adecuadamente en el ordenador, es decir, qué características o requisitos 
+necesarios tendrá que tener el sistema informático. 
+Cada desarrollador crea sus aplicaciones enfocadas a plataformas concretas, con unas necesidades de 
+hardware y software necesarias para su funcionamiento. 
+Una aplicación creada para una plataforma no podrá ser instalada en otra distinta. 
+Tampoco podrá ser instalada la aplicación si nuestro sistema informático no cumple los requisitos mínimos. 
+Antes de proceder a la instalación de una aplicación tendrá que reunir la información sobre 
+el hardware de su ordenador y deberá verificar que su hardware le permite realizar el tipo de instalación que desea efectuar. 
