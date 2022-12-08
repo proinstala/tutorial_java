@@ -16,12 +16,10 @@ public class SocketLector {
                 System.err.println("No se ha podido establecer conexión.");
                 System.err.println(ex.toString());
         }
-        if (canal != null)  //Si hemos podido establecer la conexión. Tenemos
-                            //un canal de comunicación
+        if (canal != null)  //Si hemos podido establecer la conexión. Tenemos un canal de comunicación
             try{
                entrada = new BufferedReader(new InputStreamReader(canal.getInputStream()));
-               //Obtemenos el objeto que representa el strean de entrada en el canal
-               //Lector con buffer, para no perder ningún dato
+               //Obtemenos el objeto que representa el strean de entrada en el canal Lector con buffer, para no perder ningún dato
                while ((valorEntrada = entrada.readLine())!= null){
                    //Mientras que haya datos que leer
                    System.out.println(valorEntrada);

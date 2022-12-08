@@ -5,8 +5,15 @@ public class clase_scanner {
     public static void main(String[] args) {
         /* 
         - La clase Scanner se usa para introducir informacion por consola.
-        - El metodo nexInt() no es estatico. Se necesita crear un objeto para su uso.
-        - El metodo nexLine() no es estatico. Se necesita crear un objeto para su uso.
+        Metodos:
+        - nexInt()
+        - next()
+        - nexLine() 
+        
+        NOTA:
+        Los metodos nextInt() y next() no consumen salto de linea.
+        Si hay un error en saltos de linea hay que poner debajo un nexLine() para consumir el salto de linea.
+
         */
 
         Scanner entrada = new Scanner(System.in); //instanciamos la clase 

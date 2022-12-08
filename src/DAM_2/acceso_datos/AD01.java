@@ -65,7 +65,6 @@ public class AD01 {
         dir1.mkdir();
 
 
-
         File fich4 = new File(BASE+"dir1/fich4.txt");
         try {
             fich4.createNewFile();
