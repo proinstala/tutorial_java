@@ -11,7 +11,13 @@ public class TareaServidorUDP {
     public static void main(String[] args) {
 
         Random rnd = new Random();
-        String nombreHostCliente = "localhost";
+        
+        //Modificado
+        //String nombreHostCliente = "localhost";
+        String nombreHostCliente;
+        InetAddress inetHostCliete;
+        //------------------
+
         int puertoCliente;
 
         try {
@@ -32,8 +38,11 @@ public class TareaServidorUDP {
                 System.out.println("Recibida petición " + datos);
                 
                 //Datos de socket cliente conectado 
-                System.out.println("direccion remoto: " + mensaje.getAddress()); 
-                System.out.println("puerto remoto: " + mensaje.getPort()); 
+                puertoCliente = mensaje.getPort();                      //obtiene el puerto del cliente que ha realizado la petición
+                nombreHostCliente =  mensaje.getAddress().toString();   //obtiene la direccion del cliente que ha realizado la petición
+                inetHostCliete = mensaje.getAddress();                  //obtiene InetAddress del cliente que ha realizado la petición
+                System.out.println("direccion remoto: " + nombreHostCliente); 
+                System.out.println("puerto remoto: " + puertoCliente); 
                 System.out.println("");
                 
                 String apuesta = "";
@@ -70,8 +79,9 @@ public class TareaServidorUDP {
                 byte[] eCadena = apuesta.getBytes();
                 
                 puertoCliente = mensaje.getPort();//obtiene el puerto del cliente que ha realizado la petición
-                InetAddress maquina = InetAddress.getByName(nombreHostCliente);//crea el objeto InetAddress con la direccion del cliente
-                
+
+                //InetAddress maquina = InetAddress.getByName(nombreHostCliente);//crea el objeto InetAddress con la direccion del cliente
+                InetAddress maquina = inetHostCliete;
                 //DatagramPacket(Mensaje a enviar, Longitud del mensaje, equipo al que se le envía el mensaje, Puerto destino)
                 DatagramPacket eMensaje = new DatagramPacket(eCadena, apuesta.length(), maquina,  puertoCliente);
                 sSocket.send(eMensaje);//envia los datos

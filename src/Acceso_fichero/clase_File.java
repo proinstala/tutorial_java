@@ -26,11 +26,10 @@ https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/File.html
 */
 
 
-public class clase_File {
+public class Clase_File {
     public static void main(String[] args) {
         
         File f = new File("src\\Acceso_fichero\\pildoras.txt");
-        File ruta1 = new File("src\\Acceso_fichero\\carpeta_prueba");
         File ruta2 = new File("src\\Acceso_fichero");
 
         System.out.println("nombre del archivo: " + f.getName());               //Devuelve el nombre del fichero o directorio.

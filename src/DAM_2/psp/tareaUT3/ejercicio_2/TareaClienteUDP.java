@@ -12,7 +12,7 @@ public class TareaClienteUDP {
     public static void main(String[] args) {
         
         String nombreHost = "localhost";//Host receptor
-        String texto = "bonoloto";      //String a enviar
+        String texto = "quiniela";      //String a enviar. Apuesta.
         int Puerto = 1500;              //Puerto Servidor
         
         try {

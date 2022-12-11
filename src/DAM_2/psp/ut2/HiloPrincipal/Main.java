@@ -15,7 +15,6 @@ public class Main {
       //obtiene el hilo donde se está ejecutando este método mediante la
       //función Thread.currentThread(), y lo almacena en la variable local miHilo
       Thread miHilo = Thread.currentThread();
-
       //imprime el nombre del hilo en la Salida (función getName())
       System.out.println("Por defecto, el hilo que ejecuta el método main() " +"de mi programa se llama '" + miHilo.getName() + "'\n");
 
