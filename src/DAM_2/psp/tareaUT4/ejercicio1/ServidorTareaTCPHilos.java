@@ -11,6 +11,9 @@ import java.net.Socket;
 import java.net.SocketException;
 import java.util.Random;
 
+//Puertos conocidos   [0, 1023]      Son puertos reservados a aplicaciones de uso estándar
+//Puertos registrados [1024, 49151]  Estos puertos pueden ser utilizados por los usuarios libremente.
+//Puertos dinámicos   [49152, 65535] Este rango de puertos no puede ser registrado y su uso se establece para conexiones temporales entre aplicaciones.
 
 public class ServidorTareaTCPHilos extends Thread {
     

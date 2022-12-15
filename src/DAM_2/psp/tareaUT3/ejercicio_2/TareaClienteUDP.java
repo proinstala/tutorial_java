@@ -12,7 +12,7 @@ public class TareaClienteUDP {
     public static void main(String[] args) {
         
         String nombreHost = "localhost";//Host receptor
-        String texto = "quiniela";      //String a enviar. Apuesta.
+        String texto = "primitiva";      //String a enviar. Apuesta.
         int Puerto = 1500;              //Puerto Servidor
         
         try {
@@ -24,8 +24,7 @@ public class TareaClienteUDP {
                 // Crea el mensaje
                 byte[] eCadena = texto.getBytes();
 
-                // DatagramPacket(Mensaje a enviar, Longitud del mensaje, equipo al que se le
-                // envía el mensaje, Puerto destino)
+                // DatagramPacket(Mensaje a enviar, Longitud del mensaje, equipo al que se le envía el mensaje, Puerto destino)
                 DatagramPacket eMensaje = new DatagramPacket(eCadena, texto.length(), maquina, Puerto);
 
                 // Envía el mensaje

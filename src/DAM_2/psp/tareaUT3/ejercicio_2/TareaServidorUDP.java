@@ -7,18 +7,18 @@ import java.net.InetAddress;
 import java.net.SocketException;
 import java.util.Random;
 
+//Puertos conocidos   [0, 1023]      Son puertos reservados a aplicaciones de uso estándar
+//Puertos registrados [1024, 49151]  Estos puertos pueden ser utilizados por los usuarios libremente.
+//Puertos dinámicos   [49152, 65535] Este rango de puertos no puede ser registrado y su uso se establece para conexiones temporales entre aplicaciones.
+
 public class TareaServidorUDP {
     public static void main(String[] args) {
 
-        Random rnd = new Random();
-        
-        //Modificado
         //String nombreHostCliente = "localhost";
         String nombreHostCliente;
         InetAddress inetHostCliete;
-        //------------------
-
         int puertoCliente;
+        Random rnd = new Random();
 
         try {
             //Crea el socket
@@ -58,7 +58,6 @@ public class TareaServidorUDP {
                         }
                     }
 
-
                 } else if (datos.toLowerCase().equals("primitiva")) { //si es primitiva, crea la apuesta aleatoria de primitiva
                     apuesta = "Números ";
                     
@@ -74,19 +73,18 @@ public class TareaServidorUDP {
                 }
                 
                 
-                
                 // Crea el array de byte con los datos de la apuesta
                 byte[] eCadena = apuesta.getBytes();
                 
-                puertoCliente = mensaje.getPort();//obtiene el puerto del cliente que ha realizado la petición
-
+                //puertoCliente = mensaje.getPort();//obtiene el puerto del cliente que ha realizado la petición
                 //InetAddress maquina = InetAddress.getByName(nombreHostCliente);//crea el objeto InetAddress con la direccion del cliente
+
                 InetAddress maquina = inetHostCliete;
                 //DatagramPacket(Mensaje a enviar, Longitud del mensaje, equipo al que se le envía el mensaje, Puerto destino)
                 DatagramPacket eMensaje = new DatagramPacket(eCadena, apuesta.length(), maquina,  puertoCliente);
                 sSocket.send(eMensaje);//envia los datos
                 
-            }
+            }//Fin while(true) 
            
         } catch (SocketException e) {
             System.err.println("Socket: " + e.getMessage());
