@@ -18,7 +18,9 @@ public class Propiedades_System {
         System.out.println(System.getProperty("java.vendor"));      //Nombre del proveedor de JRE
         System.out.println(System.getProperty("java.vendor.url"));  //URL del proveedor de JRE
         System.out.println(System.getProperty("java.version"));     //Número de versión JRE
-        //System.out.println(System.getProperty("line.separator"));   //Secuencia utilizada por el sistema operativo para separar líneas en archivos de texto
+        
+        //Salto de linea
+        System.out.println(System.getProperty("line.separator"));   //Secuencia utilizada por el sistema operativo para separar líneas en archivos de texto
         System.out.println(System.getProperty("os.arch"));          //Arquitectura del sistema operativo
         System.out.println(System.getProperty("os.name"));          //Nombre del sistema operativo
         System.out.println(System.getProperty("os.version"));       //Versión del sistema operativo

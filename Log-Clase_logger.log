@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2023-01-27T11:15:43.781436900Z</date>
+  <millis>1674818143781</millis>
+  <nanos>436900</nanos>
+  <sequence>0</sequence>
+  <logger>Log-Clase_logger</logger>
+  <level>WARNING</level>
+  <class>DAM_2.psp.Clase_Logger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Primer log</message>
+</record>
+<record>
+  <date>2023-01-27T11:15:43.864955Z</date>
+  <millis>1674818143864</millis>
+  <nanos>955000</nanos>
+  <sequence>1</sequence>
+  <logger>Log-Clase_logger</logger>
+  <level>INFO</level>
+  <class>DAM_2.psp.Clase_Logger</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Hola mundo</message>
+</record>
+</log>
+ene 27, 2023 12:17:35 P. M. DAM_2.psp.Clase_Logger main
+ADVERTENCIA: Primer log
