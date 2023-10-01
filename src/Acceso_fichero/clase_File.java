@@ -26,7 +26,7 @@ https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/File.html
 */
 
 
-public class Clase_File {
+public class clase_File {
     
     public static void main(String[] args) {
         

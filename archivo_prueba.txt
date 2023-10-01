@@ -34,3 +34,21 @@ precio venta: 7,5 euros.
 PULSADORES CON PILOTO Simon75 ALUMBRADO PASILLOS.
 precio coste: 12 euros.
 precio venta: 13,5 euros.
+PRECIOS PRODUCTOS COMPRADOS AGOSTO 2022.
+--------------------------------------------------------
+
+LAMPARAS LED Fran grupo.
+precio coste: 1,85 euros.
+preico venta: 2,95 euros.
+
+TUBOS LED Fran grupo.
+precio coste: 7 euros.
+precio venta: 8,5 euros.
+
+TUBOS LED Sylvania.
+precio coste: 6 euros.
+precio venta: 7,5 euros.
+
+PULSADORES CON PILOTO Simon75 ALUMBRADO PASILLOS.
+precio coste: 12 euros.
+precio venta: 13,5 euros.

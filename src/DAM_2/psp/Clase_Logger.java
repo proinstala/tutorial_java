@@ -60,6 +60,10 @@ public class Clase_Logger {
             logger.log(Level.WARNING, "Primer log");
             logger.log(Level.INFO, "Hola mundo"); 
 
+            //Otra forma de ejecutar el log.
+            logger.info("mensaje de prueba. HOLA.");
+            logger.severe("mensaje de prueba. MUNDO.");
+
 
 
         } catch (Exception e) {
