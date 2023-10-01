@@ -27,10 +27,11 @@ https://docs.oracle.com/en/java/javase/14/docs/api/java.base/java/io/File.html
 
 
 public class Clase_File {
+    
     public static void main(String[] args) {
         
-        File f = new File("src\\Acceso_fichero\\pildoras.txt");
-        File ruta2 = new File("src\\Acceso_fichero");
+        File f = new File("tutorial_java\\src\\Acceso_fichero\\pildoras.txt");
+        File ruta2 = new File("tutorial_java\\src\\Acceso_fichero");
 
         System.out.println("nombre del archivo: " + f.getName());               //Devuelve el nombre del fichero o directorio.
         System.out.println("ruta del archivo: " + f.getAbsolutePath());         //Devuelve la ruta absoluta asociada al objeto File.
