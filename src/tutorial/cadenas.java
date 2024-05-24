@@ -18,7 +18,7 @@ public class cadenas {
         replaceAll(cadena, cadena nueva)    - remplaza una secuencia de caracteres por una nueva
         replaceAll("\\s", "")               - quita los espacios en una cadena.
 
-        endWith(cad)    - devuelve true si la cadena termina por la cadena pasada como argumento.
+        endsWith(cad)    - devuelve true si la cadena termina por la cadena pasada como argumento.
         startsWith(cad)   - devuelve true si la cadena comienza por la cadena pasada como argumento. 
         contains(cad)   - devuelve true si la cadena pasada por argumento esta contenida dentro de la cadena.
         trim()          - genera una copia de la cadena quitandole los espacios de delante y detras.
